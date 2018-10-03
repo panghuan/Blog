@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.4.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":"ture","onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -232,6 +232,22 @@
         
         
           
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
@@ -278,6 +294,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -537,6 +555,20 @@
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/panghuan" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:panghuan629@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
 
           
           
@@ -610,6 +642,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -651,6 +685,8 @@
 
 
 
+  
+
 
 
   
@@ -666,6 +702,11 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
   
 
 
